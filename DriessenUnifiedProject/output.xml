@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180607 11:28:58.625" generator="Robot 3.0.4 (Python 2.7.15 on win32)">
+<suite source="C:\Users\RajeshaK\eclipse-workspace\DriessenUnifiedProject" id="s1" name="DriessenUnifiedProject">
+<suite source="C:\Users\RajeshaK\eclipse-workspace\DriessenUnifiedProject\Driessen.Unified.Tests" id="s1-s1" name="Driessen.Unified.Tests">
+<suite source="C:\Users\RajeshaK\eclipse-workspace\DriessenUnifiedProject\Driessen.Unified.Tests\DriessenLoginTest.robot" id="s1-s1-s1" name="DriessenLoginTest">
+<test id="s1-s1-s1-t1" name="Login Should Failed With Wrong Username and Password">
+<kw name="Open MijnDriessen" library="Utilities">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>url=${SiteUrl}</arg>
+<arg>browser=${Browser}</arg>
+</arguments>
+<msg timestamp="20180607 11:28:58.751" level="INFO">Opening browser 'Chrome' to base url 'https://test-mijn.driessen.nl/'.</msg>
+<status status="PASS" endtime="20180607 11:29:04.362" starttime="20180607 11:28:58.751"></status>
+</kw>
+<status status="PASS" endtime="20180607 11:29:04.362" starttime="20180607 11:28:58.750"></status>
+</kw>
+<kw name="Maximize Browser" library="Utilities">
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20180607 11:29:05.481" starttime="20180607 11:29:04.363"></status>
+</kw>
+<status status="PASS" endtime="20180607 11:29:05.481" starttime="20180607 11:29:04.362"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${Delay}</arg>
+</arguments>
+<msg timestamp="20180607 11:29:10.482" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180607 11:29:10.483" starttime="20180607 11:29:05.481"></status>
+</kw>
+<kw name="Enter User Name" library="Utilities">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//input[@id='Email']</arg>
+<arg>${Username}</arg>
+</arguments>
+<msg timestamp="20180607 11:29:10.484" level="INFO">Typing text 'fedexuser@driessen.nl' into text field 'xpath=//input[@id='Email']'.</msg>
+<status status="PASS" endtime="20180607 11:29:10.604" starttime="20180607 11:29:10.484"></status>
+</kw>
+<status status="PASS" endtime="20180607 11:29:10.604" starttime="20180607 11:29:10.483"></status>
+</kw>
+<kw name="Enter Wrong Password" library="Utilities">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@id='Password']</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20180607 11:29:10.605" level="INFO">Typing text 'Password@2018' into text field '//input[@id='Password']'.</msg>
+<status status="PASS" endtime="20180607 11:29:10.695" starttime="20180607 11:29:10.605"></status>
+</kw>
+<status status="PASS" endtime="20180607 11:29:10.696" starttime="20180607 11:29:10.605"></status>
+</kw>
+<kw name="Click Login" library="Utilities">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//button[@type='submit'][1]</arg>
+</arguments>
+<msg timestamp="20180607 11:29:10.697" level="INFO">Clicking button 'xpath=//button[@type='submit'][1]'.</msg>
+<status status="PASS" endtime="20180607 11:29:11.711" starttime="20180607 11:29:10.697"></status>
+</kw>
+<status status="PASS" endtime="20180607 11:29:11.711" starttime="20180607 11:29:10.696"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${Delay}</arg>
+</arguments>
+<msg timestamp="20180607 11:29:16.712" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180607 11:29:16.712" starttime="20180607 11:29:11.711"></status>
+</kw>
+<kw name="Assert Warning Message" library="Utilities">
+<kw name="Element Should Contain" library="Selenium2Library">
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>xpath=//h2[contains(text(),'Welkom')]</arg>
+<arg>Welkom</arg>
+</arguments>
+<msg timestamp="20180607 11:29:16.740" level="INFO">Element 'xpath=//h2[contains(text(),'Welkom')]' contains text 'Welkom'.</msg>
+<status status="PASS" endtime="20180607 11:29:16.741" starttime="20180607 11:29:16.713"></status>
+</kw>
+<status status="PASS" endtime="20180607 11:29:16.741" starttime="20180607 11:29:16.712"></status>
+</kw>
+<tags>
+<tag>Failed_MijnDriessen_Login_Test</tag>
+</tags>
+<status status="PASS" endtime="20180607 11:29:16.741" critical="yes" starttime="20180607 11:28:58.749"></status>
+</test>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180607 11:29:19.772" starttime="20180607 11:29:16.742"></status>
+</kw>
+<status status="PASS" endtime="20180607 11:29:19.773" starttime="20180607 11:28:58.667"></status>
+</suite>
+<status status="PASS" endtime="20180607 11:29:19.775" starttime="20180607 11:28:58.665"></status>
+</suite>
+<status status="PASS" endtime="20180607 11:29:19.776" starttime="20180607 11:28:58.647"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">Failed_MijnDriessen_Login_Test</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="DriessenUnifiedProject" pass="1">DriessenUnifiedProject</stat>
+<stat fail="0" id="s1-s1" name="Driessen.Unified.Tests" pass="1">DriessenUnifiedProject.Driessen.Unified.Tests</stat>
+<stat fail="0" id="s1-s1-s1" name="DriessenLoginTest" pass="1">DriessenUnifiedProject.Driessen.Unified.Tests.DriessenLoginTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
