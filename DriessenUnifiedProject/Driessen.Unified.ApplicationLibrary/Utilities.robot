@@ -4,7 +4,7 @@ Library    Selenium2Library
 
 *** Variables ***
 ${Username}  fedexuser@driessen.nl
-${Password}  Password@2018
+${Password}  Password@20181
 ${Browser}   Chrome
 ${SiteUrl}  https://test-mijn.driessen.nl/
 ${DashboardTitle}  Inloggen - Mijn Driessen
@@ -30,6 +30,9 @@ Go to User Login Page
     Click Link    xpath=//a[@href="http://www.kariyer.net/website/kariyerim/login.aspx"]
 Enter User Name
     Input Text   xpath=//input[@id='Email']    ${Username}
+    
+Enter correct Password
+    Input Text    //input[@id='Password']    Password@2018
 Enter Wrong Password
     Input Text   //input[@id='Password']   ${Password}
 Click Login
