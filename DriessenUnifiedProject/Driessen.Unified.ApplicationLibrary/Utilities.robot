@@ -39,3 +39,5 @@ Click Login
     Click Button    xpath=//button[@type='submit'][1]
 Assert Warning Message
     Element Should Contain    xpath=//h2[contains(text(),'Welkom')]    Welkom
+Close Browser instance
+    Close Browser

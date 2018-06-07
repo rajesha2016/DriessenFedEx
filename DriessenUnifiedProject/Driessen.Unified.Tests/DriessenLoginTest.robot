@@ -7,13 +7,15 @@ Suite Teardown    Close Browser
 *** Test Cases ***
 Login Should Failed With Wrong Username and Password
     [TAGS]  Failed_MijnDriessen_Login_Test
-    Open MijnDriessen
+    Given Open MijnDriessen
     Maximize Browser
     sleep    ${Delay}
     Enter User Name
     Enter Wrong Password
     Click Login
-   
+    Sleep    ${Delay}    
+    Close Browser instance
+    
  *** Test Cases ***
 Login Should Pass With correct Username and Password
     [TAGS]  MijnDriessen_Login_Test
