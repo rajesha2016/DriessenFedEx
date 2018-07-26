@@ -1,10 +1,10 @@
 *** Settings ***
-Library    Selenium2Library
+Library    SeleniumLibrary
 
 
 *** Variables ***
-${Username}  fedexuser@driessen.nl
-${Password}  Password@20181
+${Username}  candidate007@shetty.nl
+${Password}  password@2018
 ${Browser}   Chrome
 ${SiteUrl}  https://test-mijn.driessen.nl/
 ${DashboardTitle}  Inloggen - Mijn Driessen
@@ -32,7 +32,7 @@ Enter User Name
     Input Text   xpath=//input[@id='Email']    ${Username}
     
 Enter correct Password
-    Input Text    //input[@id='Password']    Password@2018
+    Input Text    //input[@id='Password']    ${Password}
 Enter Wrong Password
     Input Text   //input[@id='Password']   ${Password}
 Click Login

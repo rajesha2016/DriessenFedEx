@@ -1,105 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20180607 16:25:33.426" generator="Robot 3.0.4 (Python 2.7.15 on win32)">
-<suite source="Z:\git\DriessenFedEx\DriessenUnifiedProject" id="s1" name="DriessenUnifiedProject">
-<suite source="Z:\git\DriessenFedEx\DriessenUnifiedProject\Driessen.Unified.Tests" id="s1-s1" name="Driessen.Unified.Tests">
-<suite source="Z:\git\DriessenFedEx\DriessenUnifiedProject\Driessen.Unified.Tests\DriessenLoginTest.robot" id="s1-s1-s1" name="DriessenLoginTest">
+<robot generated="20180615 13:39:12.354" generator="Robot 3.0.4 (Python 2.7.15 on win32)">
+<suite source="C:\Users\r.moharana\git\DriessenFedEx\DriessenUnifiedProject" id="s1" name="DriessenUnifiedProject">
+<suite source="C:\Users\r.moharana\git\DriessenFedEx\DriessenUnifiedProject\Driessen.Unified.Tests" id="s1-s1" name="Driessen.Unified.Tests">
+<suite source="C:\Users\r.moharana\git\DriessenFedEx\DriessenUnifiedProject\Driessen.Unified.Tests\DriessenLoginTest.robot" id="s1-s1-s1" name="DriessenLoginTest">
 <test id="s1-s1-s1-t1" name="Login Should Pass With correct Username and Password">
 <kw name="Open MijnDriessen" library="Utilities">
-<kw name="Open Browser" library="Selenium2Library">
+<kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the given ``url``.</doc>
 <arguments>
 <arg>url=${SiteUrl}</arg>
 <arg>browser=${Browser}</arg>
 </arguments>
-<msg timestamp="20180607 16:25:33.592" level="INFO">Opening browser 'Chrome' to base url 'https://test-mijn.driessen.nl/'.</msg>
-<status status="PASS" endtime="20180607 16:25:39.313" starttime="20180607 16:25:33.592"></status>
+<msg timestamp="20180615 13:39:12.547" level="INFO">Opening browser 'Chrome' to base url 'https://test-mijn.driessen.nl/'.</msg>
+<status status="PASS" endtime="20180615 13:39:22.859" starttime="20180615 13:39:12.546"></status>
 </kw>
-<status status="PASS" endtime="20180607 16:25:39.314" starttime="20180607 16:25:33.591"></status>
+<status status="PASS" endtime="20180615 13:39:22.860" starttime="20180615 13:39:12.545"></status>
 </kw>
 <kw name="Maximize Browser" library="Utilities">
-<kw name="Maximize Browser Window" library="Selenium2Library">
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20180607 16:25:40.438" starttime="20180607 16:25:39.315"></status>
+<status status="PASS" endtime="20180615 13:39:23.997" starttime="20180615 13:39:22.862"></status>
 </kw>
-<status status="PASS" endtime="20180607 16:25:40.438" starttime="20180607 16:25:39.314"></status>
+<status status="PASS" endtime="20180615 13:39:23.998" starttime="20180615 13:39:22.861"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>${Delay}</arg>
 </arguments>
-<msg timestamp="20180607 16:25:45.439" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20180607 16:25:45.439" starttime="20180607 16:25:40.439"></status>
+<msg timestamp="20180615 13:39:29.000" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180615 13:39:29.001" starttime="20180615 13:39:23.998"></status>
 </kw>
 <kw name="Enter User Name" library="Utilities">
-<kw name="Input Text" library="Selenium2Library">
+<kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
 <arguments>
 <arg>xpath=//input[@id='Email']</arg>
 <arg>${Username}</arg>
 </arguments>
-<msg timestamp="20180607 16:25:45.441" level="INFO">Typing text 'fedexuser@driessen.nl' into text field 'xpath=//input[@id='Email']'.</msg>
-<status status="PASS" endtime="20180607 16:25:45.560" starttime="20180607 16:25:45.441"></status>
+<msg timestamp="20180615 13:39:29.003" level="INFO">Typing text 'candidate007@shetty.nl' into text field 'xpath=//input[@id='Email']'.</msg>
+<status status="PASS" endtime="20180615 13:39:29.185" starttime="20180615 13:39:29.003"></status>
 </kw>
-<status status="PASS" endtime="20180607 16:25:45.560" starttime="20180607 16:25:45.440"></status>
+<status status="PASS" endtime="20180615 13:39:29.186" starttime="20180615 13:39:29.001"></status>
 </kw>
 <kw name="Enter correct Password" library="Utilities">
-<kw name="Input Text" library="Selenium2Library">
+<kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
 <arguments>
 <arg>//input[@id='Password']</arg>
-<arg>Password@2018</arg>
+<arg>${Password}</arg>
 </arguments>
-<msg timestamp="20180607 16:25:45.561" level="INFO">Typing text 'Password@2018' into text field '//input[@id='Password']'.</msg>
-<status status="PASS" endtime="20180607 16:25:45.667" starttime="20180607 16:25:45.561"></status>
+<msg timestamp="20180615 13:39:29.188" level="INFO">Typing text 'password@2018' into text field '//input[@id='Password']'.</msg>
+<status status="PASS" endtime="20180615 13:39:29.335" starttime="20180615 13:39:29.187"></status>
 </kw>
-<status status="PASS" endtime="20180607 16:25:45.668" starttime="20180607 16:25:45.560"></status>
+<status status="PASS" endtime="20180615 13:39:29.336" starttime="20180615 13:39:29.186"></status>
 </kw>
 <kw name="Click Login" library="Utilities">
-<kw name="Click Button" library="Selenium2Library">
+<kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>xpath=//button[@type='submit'][1]</arg>
 </arguments>
-<msg timestamp="20180607 16:25:45.669" level="INFO">Clicking button 'xpath=//button[@type='submit'][1]'.</msg>
-<status status="PASS" endtime="20180607 16:25:46.700" starttime="20180607 16:25:45.669"></status>
+<msg timestamp="20180615 13:39:29.337" level="INFO">Clicking button 'xpath=//button[@type='submit'][1]'.</msg>
+<status status="PASS" endtime="20180615 13:39:31.896" starttime="20180615 13:39:29.337"></status>
 </kw>
-<status status="PASS" endtime="20180607 16:25:46.701" starttime="20180607 16:25:45.668"></status>
+<status status="PASS" endtime="20180615 13:39:31.897" starttime="20180615 13:39:29.336"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>${Delay}</arg>
 </arguments>
-<msg timestamp="20180607 16:25:51.702" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20180607 16:25:51.702" starttime="20180607 16:25:46.701"></status>
+<msg timestamp="20180615 13:39:36.898" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180615 13:39:36.899" starttime="20180615 13:39:31.897"></status>
 </kw>
 <kw name="Assert Warning Message" library="Utilities">
-<kw name="Element Should Contain" library="Selenium2Library">
+<kw name="Element Should Contain" library="SeleniumLibrary">
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
 <arguments>
 <arg>xpath=//h2[contains(text(),'Welkom')]</arg>
 <arg>Welkom</arg>
 </arguments>
-<msg timestamp="20180607 16:25:51.730" level="INFO">Element 'xpath=//h2[contains(text(),'Welkom')]' contains text 'Welkom'.</msg>
-<status status="PASS" endtime="20180607 16:25:51.730" starttime="20180607 16:25:51.703"></status>
+<msg timestamp="20180615 13:39:36.938" level="INFO">Element 'xpath=//h2[contains(text(),'Welkom')]' contains text 'Welkom'.</msg>
+<status status="PASS" endtime="20180615 13:39:36.938" starttime="20180615 13:39:36.901"></status>
 </kw>
-<status status="PASS" endtime="20180607 16:25:51.730" starttime="20180607 16:25:51.702"></status>
+<status status="PASS" endtime="20180615 13:39:36.938" starttime="20180615 13:39:36.899"></status>
 </kw>
 <tags>
-<tag>MijnDriessen_Login_Test</tag>
+<tag>MijnDriessen_Regression_Test</tag>
 </tags>
-<status status="PASS" endtime="20180607 16:25:51.731" critical="yes" starttime="20180607 16:25:33.589"></status>
+<status status="PASS" endtime="20180615 13:39:36.939" critical="yes" starttime="20180615 13:39:12.544"></status>
 </test>
-<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20180607 16:25:54.754" starttime="20180607 16:25:51.732"></status>
+<status status="PASS" endtime="20180615 13:39:40.025" starttime="20180615 13:39:36.940"></status>
 </kw>
-<status status="PASS" endtime="20180607 16:25:54.754" starttime="20180607 16:25:33.468"></status>
+<status status="PASS" endtime="20180615 13:39:40.026" starttime="20180615 13:39:12.411"></status>
 </suite>
-<status status="PASS" endtime="20180607 16:25:54.757" starttime="20180607 16:25:33.465"></status>
+<status status="PASS" endtime="20180615 13:39:40.030" starttime="20180615 13:39:12.408"></status>
 </suite>
-<status status="PASS" endtime="20180607 16:25:54.758" starttime="20180607 16:25:33.445"></status>
+<status status="PASS" endtime="20180615 13:39:40.033" starttime="20180615 13:39:12.384"></status>
 </suite>
 <statistics>
 <total>
@@ -107,7 +107,7 @@
 <stat fail="0" pass="1">All Tests</stat>
 </total>
 <tag>
-<stat fail="0" pass="1">MijnDriessen_Login_Test</stat>
+<stat fail="0" pass="1">MijnDriessen_Regression_Test</stat>
 </tag>
 <suite>
 <stat fail="0" id="s1" name="DriessenUnifiedProject" pass="1">DriessenUnifiedProject</stat>
